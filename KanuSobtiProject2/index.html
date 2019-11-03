@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>KaysHoroscope</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="icon" href="assets\horoscope_icon.png">
+</head>
+<body>
+	<header>
+		<div id="videoDiv">
+			<video autoplay muted loop id="myVideo">
+	  				<source src="assets\Background_Stars.mp4" type="video/mp4">
+	  		</video>
+			<div class="content">
+			  	<h1>Click below to get insights about your future!!</h1>
+		  		<button class="buttonZodiac" id="mainGetHoroscope">View your Horoscope</button>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="wrapper mainDiv" id="zodiacPage">
+			
+			<div class="Aries zodiac wrapper" id="aries">
+				<h4>Aries Zodiac Sign</h4>
+				<img src="assets/profile-aries.png" alt="Aries Zodiac Sign Image">
+				<h5>Aries Dates</h5>
+				<p>Mar 21 - April 19</p>
+				<p>Eager, dynamic, quick and competitive</p>
+			</div>
+
+			<div class="Taurus zodiac wrapper" id="taurus">
+				
+				<h4>Taurus Zodiac Sign</h4>
+				<img src="assets/profile-taurus.png" alt="Taurus Zodiac Sign Image">
+				<h5>Taurus Dates</h5>
+				<p>Apr 20 - May20</p>
+				<p>Strong, dependable, sensual and creative</p>
+			</div>
+
+			<div class="Gemini zodiac wrapper" id="gemini" alt="Gemini Zodiac Sign Image">
+				<h4>Gemini Zodiac Sign</h4>
+				<img src="assets/profile-gemini.png">
+				<h5>Gemini Dates</h5>
+				<p>May 21 - Jun 20</p>
+				<p>Versatile, expressive, curious and kind</p>
+			</div>
+
+			<div class="Cancer zodiac wrapper" id="cancer" alt="Cancer Zodiac Sign Image">
+				<h4>Cancer Zodiac Sign</h4>
+				<img src="assets/profile-cancer.png">
+				<h5>Cancer Dates</h5>
+				<p>Jun 21-Jul 22</p>
+				<p>Intuitive, Sentimental, Trustworthy</p> 
+			</div>
+
+			<div class="Leo zodiac wrapper" id="leo" alt="Leo Zodiac Sign Image">
+				<h4>Leo Zodiac Sign</h4>
+				<img src="assets/profile-leo.png">
+				<h5>Leo Dates</h5>
+				<p>Jul 23 - Aug 22</p>
+				<p>Dramatic, outgoing, fiery and self-assured</p>
+			</div>
+
+			<div class="Virgo zodiac wrapper" id="virgo">
+				<h4>Virgo Zodiac Sign</h4>
+				<img src="assets/profile-virgo.png" alt="Virgo Zodiac Sign Image">
+				<h5>Virgo Dates</h5>
+				<p>Aug 23 - Sept 22</p>
+				<p>Practical, loyal, gentle and analytical</p>
+			</div>
+
+			<div class="Libra zodiac wrapper" id="libra">
+				<h4>Libra Zodiac Sign</h4>
+				<img src="assets/profile-libra.png" alt="Libra Zodiac Sign Image">
+				<h5>Libra Dates</h5>
+				<p>Sept 23 - Oct 22</p>
+				<p>Social, fair-minded, diplomatic and gracious</p>
+			</div>
+
+			<div class="Scorpio zodiac wrapper" id="scorpio">
+				<h4>Scorpio Zodiac Sign</h4>
+				<img src="assets/profile-scorpio.png" alt="Scorpio Zodiac Sign Image">
+				<h5>Scorpio Dates</h5>
+				<p>Oct 23 - Nov 21</p>
+				<p>Passionate, stubborn, resourceful and brave</p> 
+			</div>
+
+			<div class="Sagittarius zodiac wrapper" id="sagittarius">
+				<h4>Sagittarius Zodiac Sign</h4>
+				<img src="assets/profile-sagittarius.png" alt="Sagittarius Zodiac Sign Image">
+				<h5>Sagittarius Dates</h5>
+				<p>Nov 22 - Dec 21</p>
+				<p>Extroverted, optimistic, funny and generous</p> 
+			</div>
+
+			<div class="Capricorn zodiac wrapper" id="capricorn">
+				<h4>Capricorn Zodiac Sign</h4>
+				<img src="assets/profile-capricorn.png" alt="Capricorn Zodiac Sign Image">
+				<h5>Capricorn Dates</h5>
+				<p>Dec 22 - Jan 19</p>
+				<p>Serious, independent, disciplined and tenacious</p> 
+			</div>
+
+			<div class="Aquarius zodiac wrapper" id="aquarius">
+				<h4>Aquarius Zodiac Sign</h4>
+				<img src="assets/profile-aquarius.png" alt="Aquarius Zodiac Sign Image">
+				<h5>Aquarius Dates</h5>
+				<p>Jan 20 - Feb 18</p>
+				<p>Deep, imaginative, original and uncompromising</p> 
+			</div>
+
+			<div class="Pisces zodiac wrapper" id="pisces">
+				<h4>Pisces Zodiac Sign</h4>
+				<img src="assets/profile-pisces.png" alt="Pisces Zodiac Sign Image">
+				<h5>Pisces Dates</h5>
+				<p>Feb 19 - Mar 20</p>
+				<p>Affectionate, empathetic, wise and artistic</p> 
+			</div>
+
+		</div>		
+		
+		<section class="mainDiv wrapper clearfix" id="resultPage">
+			
+			<h4 class="resultZodiacTitle"></h4>
+			
+			<div class="textImageContainer wrapper">	
+				<div class="imageZodiac">
+					<img class="resultImage" src="" alt="Results Zodiac Sign Image">
+				</div>
+
+				<div class="resultButttons">
+					<button class="buttonZodiac" id="today">Today</button>
+					<button class="buttonZodiac" id="weekly">Weekly</button>
+					<button class="buttonZodiac" id="monthly">Monthly</button>
+					<button class="buttonZodiac" id="yearly">Yearly</button>
+					<p> 
+						<h2 class="predictions" id="periodicalPrediction"></h2>
+						<em class="predictions" id="emPrediction">
+						</em>
+					</p>
+				</div>
+
+				<button class="buttonZodiac" id="checkAgain">Check Again</button>
+
+			</div>
+
+		</section>
+
+	</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

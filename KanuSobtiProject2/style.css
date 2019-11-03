@@ -1,0 +1,130 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+header{
+	border-bottom: solid black;
+}
+
+html, body, h4, h5, p{
+	margin:0;
+	padding:0;
+}
+
+html {
+ 	scroll-behavior: smooth;
+}
+
+img {	
+	max-width: 32%;
+}
+
+h1{
+	color: rgb(206,204,204);
+}
+
+button:focus {outline:0;}
+
+#myVideo {
+	right: 0;
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+}
+
+.content {
+	position: fixed;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	color: #f1f1f1;
+	width: 100%;
+	padding: 20px;
+}
+
+.buttonZodiac {
+	background: rgba(158,78,122,0.2);
+	border: 5px solid slategrey;
+	border-radius: 16%;
+	cursor:pointer;
+	color:gray;
+	font-size: 1rem;
+	letter-spacing: 4px;
+	margin: 5px 7px;
+	padding: 8px 16px;
+	text-align: center;
+}
+
+.buttonZodiac:hover{
+	background: rgba(4,232,251,0.8);
+	border: 5px solid rgb(30, 105,25);
+	border-radius: 16%;
+	color:black;
+}
+
+.mainDiv{
+	background-image: url(assets/sky-828648_1920.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.zodiac{
+	border:5px none rebeccapurple;
+	text-align: center;
+	color: white;
+	width: calc(25% - 20px);
+	margin:10px;
+	max-height: 30%;
+	background: rgba(141,134,133,0.4);	
+}
+
+.zodiac:hover{
+	background: rgba(0,0,0,0.2);
+	color: #A9A9A9;	
+	cursor: pointer;	
+}
+
+.resultZodiacTitle{
+	color:rgb(206,204,204);
+	text-transform: uppercase;
+	font-size: 40px;
+	text-align: center;
+}
+
+.textImageContainer{
+	float:left;
+	margin:5px;
+	width:100%;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.imageZodiac{
+	width:40%;
+	display: inline-block;
+}
+
+.resultImage{
+	max-width: 100%;	
+}
+
+.resultButttons{
+	width: 50%;
+	float:right;
+	padding-top: 5%;
+}
+
+.buttonZodiac p{
+	color: gray;
+	padding-top: 5%;
+}
+
+.predictions{
+	color: white;
+}
